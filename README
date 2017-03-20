@@ -20,7 +20,7 @@ servo2.py will run a servo back an forth my changin the PWM on pin 16.  easily c
 
 
 testall.py
-  similar to mcp3008_tst.py reads all the ADC channels, but also reads DHT22 sensonr on pins 4 and 17.  Also dose serial input and output on TTYAMA0, the internal uart.
+  similar to mcp3008_tst.py reads all the ADC channels, but also reads DHT22 sensors on pins 4 and 17.  Also dose serial input and output on TTYAMA0, the internal uart.
     run with:::  sudo python testall.py
 
 All these examples are free to use for educational purposes.
