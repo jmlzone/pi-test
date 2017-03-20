@@ -1,0 +1,27 @@
+Here is a collection of test programs I have used on various Raspberry Pi based sensor projects such as
+my cottage monitor: https://thingspeak.com/channels/54967
+and the New Horizon model done for stelephane
+
+mcp3008_test.py This assumes a 3.3 V full scale vref and reads all the
+channels on a default connected MCP3008 ADC every 5 seconds.  Its a
+good quick hack to see if you can read the adc voltages.  it can
+easily be modified for other uses.
+  run with:::  sudo python mcp3008_test.py
+
+motorTest.py This is part of the Stellaphane 2016 project and runs a
+stepper moter.  The motor class alone is a great simple stepper setup.
+  run with::: sudo python motorTest.py <N steps> <direction>
+     example:  sudo python motorTest.py 100 approach
+               sudo python motorTest.py 200 depart
+
+
+servo2.py will run a servo back an forth my changin the PWM on pin 16.  easily changed
+  run with:::  sudo python servo2.py
+
+
+testall.py
+  similar to mcp3008_tst.py reads all the ADC channels, but also reads DHT22 sensonr on pins 4 and 17.  Also dose serial input and output on TTYAMA0, the internal uart.
+    run with:::  sudo python testall.py
+
+All these examples are free to use for educational purposes.
+
